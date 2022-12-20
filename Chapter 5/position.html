@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        height: 200vw;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+        height: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      /* li {
+        display: inline-block;
+      } */
+      p {
+        text-align: center;
+      }
+      .container {
+        background-color: aqua;
+        height: 80vh;
+        width: 50vw;
+        margin: auto;
+        position: relative;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: gray;
+        text-align: center;
+        /* position: relative; */
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        text-align: center;
+      }
+      .box3 {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        text-align: center;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+      }
+      ul {
+        background-color: black;
+        color: aqua;
+        list-style: Square inside url("red.png");
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore et
+        est tempore maiores, consectetur, sapiente vitae nesciunt nostrum
+        adipisci quam molestiae exercitationem enim debitis consequatur
+        cupiditate pariatur repudiandae ex rerum aut? Vero, explicabo provident!
+      </p>
+      <div class="box">
+        I am a absolute box and my position is relative to last non static
+        ancestor
+      </div>
+      <div class="box2">i am a box</div>
+      <div class="box3">I am a fixed Box Relative to browser window</div>
+    </div>
+    <ul>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Orange</li>
+    </ul>
+  </body>
+</html>
